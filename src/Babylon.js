@@ -46,7 +46,6 @@ const Babylon = () => {
   ])
   const canvas = useRef()
 
-
   useEffect(() => {
     const init = async () => {
       if(canvas?.current){
