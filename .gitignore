@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+src/assets/finalVideo.mp4
+src/assets/videoLe.MP4
+sc/assets
+src/assets/fundi.jpg
+src/assets/grass_textures
+public/grass_textures
+public/textures
+public/campfire
+public/camp.glb
+public/low_poly_wood_cabin
+public/Delmon Delicate_Regular.json
+public/fonts
+src/assets/bg-explore.jpg
+public/robot_copernicus
