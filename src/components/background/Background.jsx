@@ -1,16 +1,18 @@
 import * as THREE from "three";
-import url from "../../assets/videoLe.mp4"
+import url from "../../assets/videoLe.mp4";
 import { useState } from "react";
 import Hls from "hls.js";
+//"https://media.avva.dev/BigBuckBunnyhls.m3u8"
 
 const Background = (props) => {
   const [video] = useState(() => {
     const vid = document.createElement("video");
-    let src = "https://media.avva.dev/BigBuckBunnyhls.m3u8"
-    if (Hls.isSupported()){
-      var hls = new Hls()
-      hls.loadSource(src)
-      hls.attachMedia(vid)
+    let src = url;
+    if (Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(src);
+      hls.attachMedia(vid);
+      vid.src = src
     }
     vid.loop = true;
     vid.muted = true;

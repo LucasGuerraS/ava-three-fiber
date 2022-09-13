@@ -22,11 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-src/assets/finalVideo.mp4
-src/assets/videoLe.MP4
-sc/assets
-src/assets/fundi.jpg
-src/assets/grass_textures
+src/assets
 public/grass_textures
 public/textures
 public/campfire
@@ -34,5 +30,4 @@ public/camp.glb
 public/low_poly_wood_cabin
 public/Delmon Delicate_Regular.json
 public/fonts
-src/assets/bg-explore.jpg
 public/robot_copernicus
