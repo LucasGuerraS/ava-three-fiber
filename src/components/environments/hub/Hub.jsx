@@ -72,7 +72,7 @@ const Hub = (props) => {
         <ReusableSphere
           position={[2, 10, 20]}
           change={props.change}
-          number={2}
+          number={3}
           imagem={PB}
         />
       </Float>

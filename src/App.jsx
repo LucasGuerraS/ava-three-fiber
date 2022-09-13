@@ -3,7 +3,7 @@ import MemorieScene from "./components/environments/memorieScene/MemorieScene";
 import Hub from "./components/environments/hub/Hub";
 import { VRCanvas } from "@react-three/xr";
 import { Loader } from "@react-three/drei";
-import { render } from "react-dom";
+import Foto from "./components/background/FotoFundo"
 
 const App = () => {
   const [scene, setScene] = useState(1);
@@ -17,6 +17,10 @@ const App = () => {
       
       case 2:
         return <MemorieScene change={switchScene} />;
+      
+      case 3:
+        return <Foto change={switchScene} />;
+      
       default:
         break;
     }
