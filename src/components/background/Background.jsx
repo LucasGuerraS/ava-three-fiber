@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import url from "../../assets/videoLe.mp4";
 import { useState } from "react";
 import Hls from "hls.js";
 //"https://media.avva.dev/BigBuckBunnyhls.m3u8"
@@ -7,7 +6,7 @@ import Hls from "hls.js";
 const Background = (props) => {
   const [video] = useState(() => {
     const vid = document.createElement("video");
-    let src = url;
+    let src = props.video;
     if (Hls.isSupported()) {
       var hls = new Hls();
       hls.loadSource(src);

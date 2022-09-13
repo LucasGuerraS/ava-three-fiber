@@ -1,8 +1,8 @@
 import { DefaultXRControllers, useXR } from "@react-three/xr";
-import { Loader } from "@react-three/drei";
 import Background from "../../background/Background";
 import { Suspense } from "react";
 import HomeButton from "../../shapes/homeButton/HomeButton";
+import url from "../../../assets/videoLe.mp4";
 
 const MemorieScene = (props) => {
   const { player } = useXR();
@@ -13,7 +13,7 @@ const MemorieScene = (props) => {
     <>
       <ambientLight />
       <Suspense>
-        <Background />
+        <Background video={url} />
       </Suspense>
       <HomeButton
         position={[-4, 0, 16]}

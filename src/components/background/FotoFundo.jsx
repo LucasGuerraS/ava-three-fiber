@@ -41,7 +41,7 @@ const Foto = (props) => {
           change={changeImage}
           number={2}
           imagem={img2}
-        />
+        />           
         <ChangeImageSphere
           position={[-8, 3, 18]}
           scale={[1, 1, 1]}
