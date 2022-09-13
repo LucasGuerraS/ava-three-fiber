@@ -4,13 +4,11 @@ import { Suspense } from "react";
 import { Campfire } from "../../models/Campfire";
 import { Cabin } from "../../models/Cabin";
 import { useXR, DefaultXRControllers } from "@react-three/xr";
+import PBTexturizedSphere from "../../shapes/texturizedSphere/PBTexturizedSphere";
 import Texto from "../../models/Texto";
 import { Robot } from "../../models/Robot";
-import ReusableSphere from "../../shapes/texturizedSphere/ReusableSphere";
-import PB from "../../../assets/PB/pictures/mesa-sala-PB.jpg";
-import FI from "../../../assets/fundi.jpg";
 
-const Hub = (props) => {
+const ImagesScene = () => {
   const { player } = useXR();
   player.position.x = -4;
   player.position.z = 10;
@@ -51,30 +49,10 @@ const Hub = (props) => {
         floatIntensity={1}
         floatingRange={[0, 0.5]}
       >
-        <ReusableSphere
-          position={[-6, 10, 20]}
-          change={props.change}
-          number={2}
-          imagem={FI}
-        />
-        <ReusableSphere
-          position={[-10, 11, 20]}
-          change={props.change}
-          number={2}
-          imagem={FI}
-        />
-        <ReusableSphere
-          position={[-2, 11, 20]}
-          change={props.change}
-          number={2}
-          imagem={FI}
-        />
-        <ReusableSphere
-          position={[2, 10, 20]}
-          change={props.change}
-          number={2}
-          imagem={PB}
-        />
+        <PBTexturizedSphere position={[-6, 10, 20]} change={props.change} />
+        <PBTexturizedSphere position={[-10, 11, 20]} change={props.change} />
+        <PBTexturizedSphere position={[-2, 11, 20]} change={props.change} />
+        <PBTexturizedSphere position={[2, 10, 20]} change={props.change} />
       </Float>
       <Cabin position={[10, -5, 0]} />
       <Texto
@@ -95,4 +73,4 @@ const Hub = (props) => {
   );
 };
 
-export default Hub;
+export default ImagesScene;

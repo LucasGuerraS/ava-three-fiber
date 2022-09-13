@@ -7,7 +7,7 @@ import { useInteraction } from "@react-three/xr";
 const HomeButton = (props) => {
   const boxRef = useRef();
   useInteraction(boxRef, "onSelect", () => {
-    props.change();
+    props.change(1);
   });
   return (
     <mesh {...props} ref={boxRef}>
