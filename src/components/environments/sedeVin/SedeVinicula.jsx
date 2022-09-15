@@ -1,15 +1,21 @@
+import React from "react";
 import { Float } from "@react-three/drei";
-import img from "../../../assets/PB/pictures/escritorio/sala-reuniao.jpg";
-import img2 from "../../../assets/PB/pictures/escritorio/mesa-sala-PB.jpg";
-import img3 from "../../../assets/PB/pictures/escritorio/sofa-sala-PB.jpg";
 import ChangeImageSphere from "../../shapes/imageSphere/ChangeImageSphere";
 import Texto from "../../models/Texto";
 import { DefaultXRControllers } from "@react-three/xr";
 import HomeButton from "../../shapes/homeButton/HomeButton";
 import Foto from "../../background/FotoFundo";
 import { useState } from "react";
+import {
+  capela,
+  mesaJantar,
+  mesaTrabalhos,
+  entrada,
+  sofaVaranda,
+  vistaLago,
+} from "../../../assets/PB/pictures/sedeVinicula/index";
 
-const Escritorio = (props) => {
+const SedeVinicula = (props) => {
   const [image, setImage] = useState(props.defaultImg);
   const changeImage = (imageName) => {
     setImage(imageName);
@@ -28,21 +34,35 @@ const Escritorio = (props) => {
           scale={[1, 1, 1]}
           change={changeImage}
           number={2}
-          imagem={img3}
+          imagem={vistaLago}
         />
         <ChangeImageSphere
           position={[0, 3, 18]}
           scale={[1, 1, 1]}
           change={changeImage}
           number={2}
-          imagem={img2}
+          imagem={sofaVaranda}
         />
         <ChangeImageSphere
           position={[-8, 3, 18]}
           scale={[1, 1, 1]}
           change={changeImage}
           number={2}
-          imagem={img}
+          imagem={mesaJantar}
+        />
+        <ChangeImageSphere
+          position={[4, 3, 18]}
+          scale={[1, 1, 1]}
+          change={changeImage}
+          number={2}
+          imagem={mesaTrabalhos}
+        />
+        <ChangeImageSphere
+          position={[-12, 3, 18]}
+          scale={[1, 1, 1]}
+          change={changeImage}
+          number={2}
+          imagem={capela}
         />
         <Texto
           color="white"
@@ -62,4 +82,4 @@ const Escritorio = (props) => {
   );
 };
 
-export default Escritorio;
+export default SedeVinicula;

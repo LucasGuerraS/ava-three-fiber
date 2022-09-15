@@ -7,7 +7,8 @@ import { useXR, DefaultXRControllers } from "@react-three/xr";
 import Texto from "../../models/Texto";
 import { Robot } from "../../models/Robot";
 import ReusableSphere from "../../shapes/texturizedSphere/ReusableSphere";
-import PB from "../../../assets/PB/pictures/mesa-sala-PB.jpg";
+import PBEscrit from "../../../assets/PB/pictures/escritorio/mesa-sala-PB.jpg";
+import PBSedeVin from "../../../assets/PB/pictures/sedeVinicula/entrada.jpg"
 import FI from "../../../assets/fundi.jpg";
 
 const Hub = (props) => {
@@ -66,14 +67,14 @@ const Hub = (props) => {
         <ReusableSphere
           position={[-2, 11, 20]}
           change={props.change}
-          number={2}
-          imagem={FI}
+          number={4}
+          imagem={PBSedeVin}
         />
         <ReusableSphere
           position={[2, 10, 20]}
           change={props.change}
           number={3}
-          imagem={PB}
+          imagem={PBEscrit}
         />
       </Float>
       <Cabin position={[10, -5, 0]} />
