@@ -6,7 +6,9 @@ import { Loader } from "@react-three/drei";
 import Escritorio from "./components/environments/escritorio/Escritorio";
 import img3 from "./assets/PB/pictures/escritorio/sofa-sala-PB.jpg";
 import SedeVinicula from "./components/environments/sedeVin/SedeVinicula";
-import VinEntrada from "./assets/PB/pictures/sedeVinicula/entrada.jpg"
+import VinEntrada from "./assets/PB/pictures/sedeVinicula/entrada.jpg";
+import ViniculaHub from "./components/environments/vinicula/ViniculaHub";
+
 
 const App = () => {
   const [scene, setScene] = useState(1);
@@ -23,10 +25,13 @@ const App = () => {
 
       case 3:
         return <Escritorio change={switchScene} defaultImg={img3} />;
-        
+
       case 4:
         return <SedeVinicula change={switchScene} defaultImg={VinEntrada} />;
-      
+
+      case 5:
+        return <ViniculaHub change={switchScene} />;
+
       default:
         break;
     }

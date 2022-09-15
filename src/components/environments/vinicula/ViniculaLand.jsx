@@ -1,18 +1,18 @@
+import React from "react";
 import { Stars, OrbitControls, Float, SpotLight } from "@react-three/drei";
-import BigPlane from "../../ground/BigPlane";
 import { Suspense } from "react";
+import { useXR, DefaultXRControllers } from "@react-three/xr";
+import BigPlane from "../../ground/BigPlane";
 import { Campfire } from "../../models/Campfire";
 import { Cabin } from "../../models/Cabin";
-import { useXR, DefaultXRControllers } from "@react-three/xr";
 import Texto from "../../models/Texto";
 import { Robot } from "../../models/Robot";
 import ReusableSphere from "../../shapes/texturizedSphere/ReusableSphere";
-import PBEscrit from "../../../assets/PB/pictures/escritorio/mesa-sala-PB.jpg";
-import PBSedeVin from "../../../assets/PB/pictures/sedeVinicula/entrada.jpg"
-import FI from "../../../assets/fundi.jpg";
-import viniculaImg from "../../../assets/PB/pictures/vincula/vinhos.jpg";
+import vinhosImg from "../../../assets/PB/pictures/vincula/vinhos.jpg";
+import plantasImg from "../../../assets/PB/pictures/vincula/plantas.jpg";
+import HomeButton from "../../shapes/homeButton/HomeButton";
 
-const Hub = (props) => {
+const ViniculaLand = (props) => {
   const { player } = useXR();
   player.position.x = -4;
   player.position.z = 10;
@@ -54,28 +54,16 @@ const Hub = (props) => {
         floatingRange={[0, 0.5]}
       >
         <ReusableSphere
-          position={[-6, 10, 20]}
-          change={props.change}
-          number={2}
-          imagem={FI}
+          position={[2, 11, 20]}
+          change={props.changeScene}
+          number={3}
+          imagem={plantasImg}
         />
         <ReusableSphere
           position={[-10, 11, 20]}
-          change={props.change}
-          number={5}
-          imagem={viniculaImg}
-        />
-        <ReusableSphere
-          position={[-2, 11, 20]}
-          change={props.change}
-          number={4}
-          imagem={PBSedeVin}
-        />
-        <ReusableSphere
-          position={[2, 10, 20]}
-          change={props.change}
-          number={3}
-          imagem={PBEscrit}
+          change={props.changeScene}
+          number={2}
+          imagem={vinhosImg}
         />
       </Float>
       <Cabin position={[10, -5, 0]} />
@@ -91,10 +79,15 @@ const Hub = (props) => {
         scale={[5, 5, 5]}
         rotation={[0, Math.PI, 0]}
       />
+      <HomeButton
+        position={[-4, 11, 20]}
+        text="Back To Hub"
+        change={props.change}
+      />
       <DefaultXRControllers />
       <OrbitControls />
     </>
   );
 };
 
-export default Hub;
+export default ViniculaLand;
