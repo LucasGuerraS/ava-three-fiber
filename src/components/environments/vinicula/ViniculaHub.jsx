@@ -13,7 +13,7 @@ const ViniculaHub = (props) => {
   const renderScene = () => {
     switch (env) {
       case 1:
-        <ViniculaLand changeScene={switchEnv} change={props.change} />;
+        return <ViniculaLand changeScene={switchEnv} change={props.change} />;
 
       case 2:
         return <ViniculaPhotos change={props.change} defaultImg={telhado} />;
