@@ -4,9 +4,9 @@ import Hub from "./components/environments/hub/Hub";
 import { VRCanvas } from "@react-three/xr";
 import { Loader } from "@react-three/drei";
 import Escritorio from "./components/environments/escritorio/Escritorio";
-import img3 from "./assets/PB/pictures/escritorio/sofa-sala-PB.jpg";
+import img3 from "./assets/fundi.jpeg";
 import SedeVinicula from "./components/environments/sedeVin/SedeVinicula";
-import VinEntrada from "./assets/PB/pictures/sedeVinicula/entrada.jpg";
+import VinEntrada from "./assets/fundi.jpeg";
 import ViniculaHub from "./components/environments/vinicula/ViniculaHub";
 
 

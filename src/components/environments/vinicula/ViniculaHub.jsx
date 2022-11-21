@@ -3,7 +3,7 @@ import { useState } from "react";
 import MemorieScene from "../memorieScene/MemorieScene";
 import ViniculaLand from "./ViniculaLand";
 import ViniculaPhotos from "./ViniculaPhotos";
-import { telhado } from "../../../assets/PB/pictures/vincula/index";
+import telhado from "../../../assets/fundi.jpeg";
 
 const ViniculaHub = (props) => {
   const [env, setEnv] = useState(1);

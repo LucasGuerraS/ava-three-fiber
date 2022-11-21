@@ -6,14 +6,12 @@ import { DefaultXRControllers } from "@react-three/xr";
 import HomeButton from "../../shapes/homeButton/HomeButton";
 import Foto from "../../background/FotoFundo";
 import { useState } from "react";
-import {
-  capela,
-  mesaJantar,
-  mesaTrabalhos,
-  entrada,
-  sofaVaranda,
-  vistaLago,
-} from "../../../assets/PB/pictures/sedeVinicula/index";
+import capela from "../../../assets/fundi.jpeg"
+import mesaJantar from "../../../assets/fundi.jpeg";
+import mesaTrabalhos from "../../../assets/fundi.jpeg";
+import entrada from "../../../assets/fundi.jpeg";
+import sofaVaranda from "../../../assets/fundi.jpeg";
+import vistaLago from "../../../assets/fundi.jpeg";
 
 const SedeVinicula = (props) => {
   const [image, setImage] = useState(props.defaultImg);

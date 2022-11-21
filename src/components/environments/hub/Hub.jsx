@@ -7,10 +7,10 @@ import { useXR, DefaultXRControllers } from "@react-three/xr";
 import Texto from "../../models/Texto";
 import { Robot } from "../../models/Robot";
 import ReusableSphere from "../../shapes/texturizedSphere/ReusableSphere";
-import PBEscrit from "../../../assets/PB/pictures/escritorio/mesa-sala-PB.jpg";
-import PBSedeVin from "../../../assets/PB/pictures/sedeVinicula/entrada.jpg"
-import FI from "../../../assets/fundi.jpg";
-import viniculaImg from "../../../assets/PB/pictures/vincula/vinhos.jpg";
+import PBEscrit from "../../../assets/fundi.jpeg";
+import PBSedeVin from "../../../assets/fundi.jpeg";
+import FI from "../../../assets/fundi.jpeg";
+import viniculaImg from "../../../assets/fundi.jpeg";
 
 const Hub = (props) => {
   const { player } = useXR();

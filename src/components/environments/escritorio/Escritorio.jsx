@@ -1,7 +1,7 @@
 import { Float } from "@react-three/drei";
-import img from "../../../assets/PB/pictures/escritorio/sala-reuniao.jpg";
-import img2 from "../../../assets/PB/pictures/escritorio/mesa-sala-PB.jpg";
-import img3 from "../../../assets/PB/pictures/escritorio/sofa-sala-PB.jpg";
+import img from "../../../assets/fundi.jpeg";
+import img2 from "../../../assets/fundi.jpeg";
+import img3 from "../../../assets/fundi.jpeg";
 import ChangeImageSphere from "../../shapes/imageSphere/ChangeImageSphere";
 import Texto from "../../models/Texto";
 import { DefaultXRControllers } from "@react-three/xr";
