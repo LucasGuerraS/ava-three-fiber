@@ -12,10 +12,10 @@ import mesaTrabalhos from "../../../assets/fundi.jpeg";
 import entrada from "../../../assets/fundi.jpeg";
 import sofaVaranda from "../../../assets/fundi.jpeg";
 import vistaLago from "../../../assets/fundi.jpeg";
-import mountain from "../../../assets/montanha.jpg"
+import mountain from "../../../assets/PB/vinicula/vinGramado.jpeg"
 import inverno from "../../../assets/inverno.jpg"
 import londres from "../../../assets/londres.jpg"
-import mato from "../../../assets/mato.jpg"
+import mato from "../../../assets/PB/vinicula/vinJardim.jpeg"
 
 const SedeVinicula = (props) => {
   const [image, setImage] = useState(props.defaultImg);

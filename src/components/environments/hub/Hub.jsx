@@ -8,9 +8,9 @@ import Texto from "../../models/Texto";
 import { Robot } from "../../models/Robot";
 import ReusableSphere from "../../shapes/texturizedSphere/ReusableSphere";
 import PBEscrit from "../../../assets/PB/escritorio/escrit1.jpeg";
-import PBSedeVin from "../../../assets/fundi.jpeg";
+import PBSedeVin from "../../../assets/PB/vinicula/vinJardim.jpeg";
 import FI from "../../../assets/fundi.jpeg";
-import viniculaImg from "../../../assets/fundi.jpeg";
+import viniculaImg from "../../../assets/PB/vinicula/vinSilo.jpeg";
 
 const Hub = (props) => {
   const { player } = useXR();
@@ -54,25 +54,25 @@ const Hub = (props) => {
         floatingRange={[0, 0.5]}
       >
         <ReusableSphere
-          position={[-6, 10, 20]}
+          position={[-6, 5, 20]}
           change={props.change}
           number={2}
           imagem={FI}
         />
         <ReusableSphere
-          position={[-10, 11, 20]}
+          position={[-10, 6, 20]}
           change={props.change}
           number={5}
           imagem={viniculaImg}
         />
         <ReusableSphere
-          position={[-2, 11, 20]}
+          position={[-2, 6, 20]}
           change={props.change}
           number={4}
           imagem={PBSedeVin}
         />
         <ReusableSphere
-          position={[2, 10, 20]}
+          position={[2, 5, 20]}
           change={props.change}
           number={3}
           imagem={PBEscrit}
@@ -85,11 +85,6 @@ const Hub = (props) => {
         rotation={[0, Math.PI, 0]}
         fontSize={1}
         text="Welcome to AVA!"
-      />
-      <Robot
-        position={[-4, 0, 22]}
-        scale={[5, 5, 5]}
-        rotation={[0, Math.PI, 0]}
       />
       <DefaultXRControllers />
       <OrbitControls />

@@ -8,8 +8,8 @@ import { Cabin } from "../../models/Cabin";
 import Texto from "../../models/Texto";
 import { Robot } from "../../models/Robot";
 import ReusableSphere from "../../shapes/texturizedSphere/ReusableSphere";
-import vinhosImg from "../../../assets/fundi.jpeg";
-import plantasImg from "../../../assets/fundi.jpeg";
+import vinhosImg from "../../../assets/PB/vinicula/vinGramado.jpeg";
+import plantasImg from "../../../assets/PB/vinicula/vinJardim.jpeg";
 import HomeButton from "../../shapes/homeButton/HomeButton";
 
 const ViniculaLand = (props) => {

@@ -7,11 +7,11 @@ import HomeButton from "../../shapes/homeButton/HomeButton";
 import Foto from "../../background/FotoFundo";
 import { useState } from "react";
 import telhado from "../../../assets/fundi.jpeg";
-import capsulas from "../../../assets/fundi.jpeg";
-import mainArea from "../../../assets/fundi.jpeg";
-import vinhos from "../../../assets/fundi.jpeg";
-import silos from "../../../assets/fundi.jpeg";
-import plantas from "../../../assets/fundi.jpeg";
+import capsulas from "../../../assets/PB/vinicula/ovos.jpeg";
+import mainArea from "../../../assets/PB/vinicula/patio.jpeg";
+import vinhos from "../../../assets/PB/vinicula/vinSilo.jpeg";
+import silos from "../../../assets/PB/vinicula/vinGramado.jpeg";
+import plantas from "../../../assets/PB/vinicula/vinJardim.jpeg";
 
 const ViniculaPhotos = (props) => {
   const [image, setImage] = useState(props.defaultImg);

@@ -4,7 +4,7 @@ import Hub from "./components/environments/hub/Hub";
 import { VRCanvas } from "@react-three/xr";
 import { Loader } from "@react-three/drei";
 import Escritorio from "./components/environments/escritorio/Escritorio";
-import img3 from "./assets/fundi.jpeg";
+import img3 from "./assets/PB/escritorio/escrit1.jpeg";
 import SedeVinicula from "./components/environments/sedeVin/SedeVinicula";
 import VinEntrada from "./assets/fundi.jpeg";
 import ViniculaHub from "./components/environments/vinicula/ViniculaHub";
