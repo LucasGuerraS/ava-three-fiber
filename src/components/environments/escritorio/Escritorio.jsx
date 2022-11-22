@@ -1,7 +1,7 @@
 import { Float } from "@react-three/drei";
-import img from "../../../assets/fundi.jpeg";
-import img2 from "../../../assets/fundi.jpeg";
-import img3 from "../../../assets/fundi.jpeg";
+import img from "../../../assets/PB/escritorio/escrit1.jpeg";
+import img2 from "../../../assets/PB/escritorio/escrit2.jpeg";
+import img3 from "../../../assets/PB/escritorio/escrit3.jpeg";
 import ChangeImageSphere from "../../shapes/imageSphere/ChangeImageSphere";
 import Texto from "../../models/Texto";
 import { DefaultXRControllers } from "@react-three/xr";

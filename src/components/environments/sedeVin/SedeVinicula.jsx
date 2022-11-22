@@ -12,6 +12,10 @@ import mesaTrabalhos from "../../../assets/fundi.jpeg";
 import entrada from "../../../assets/fundi.jpeg";
 import sofaVaranda from "../../../assets/fundi.jpeg";
 import vistaLago from "../../../assets/fundi.jpeg";
+import mountain from "../../../assets/montanha.jpg"
+import inverno from "../../../assets/inverno.jpg"
+import londres from "../../../assets/londres.jpg"
+import mato from "../../../assets/mato.jpg"
 
 const SedeVinicula = (props) => {
   const [image, setImage] = useState(props.defaultImg);
@@ -32,28 +36,28 @@ const SedeVinicula = (props) => {
           scale={[1, 1, 1]}
           change={changeImage}
           number={2}
-          imagem={vistaLago}
+          imagem={mountain}
         />
         <ChangeImageSphere
           position={[0, 3, 18]}
           scale={[1, 1, 1]}
           change={changeImage}
           number={2}
-          imagem={sofaVaranda}
+          imagem={inverno}
         />
         <ChangeImageSphere
           position={[-8, 3, 18]}
           scale={[1, 1, 1]}
           change={changeImage}
           number={2}
-          imagem={mesaJantar}
+          imagem={mato}
         />
         <ChangeImageSphere
           position={[4, 3, 18]}
           scale={[1, 1, 1]}
           change={changeImage}
           number={2}
-          imagem={mesaTrabalhos}
+          imagem={londres}
         />
         <ChangeImageSphere
           position={[-12, 3, 18]}

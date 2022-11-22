@@ -7,7 +7,7 @@ import { useXR, DefaultXRControllers } from "@react-three/xr";
 import Texto from "../../models/Texto";
 import { Robot } from "../../models/Robot";
 import ReusableSphere from "../../shapes/texturizedSphere/ReusableSphere";
-import PBEscrit from "../../../assets/fundi.jpeg";
+import PBEscrit from "../../../assets/PB/escritorio/escrit1.jpeg";
 import PBSedeVin from "../../../assets/fundi.jpeg";
 import FI from "../../../assets/fundi.jpeg";
 import viniculaImg from "../../../assets/fundi.jpeg";
